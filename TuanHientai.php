@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
 
     include ("connect.php");
 
-    $sql="SELECT EXTRACT(WEEK FROM now())- EXTRACT(WEEK FROM '".$thoigianBD."') as sttTuan, EXTRACT(WEEK FROM now()) AS tuanht FROM `hockynamhoc` ORDER BY `sttTuan` DESC";
+    $sql="SELECT EXTRACT(WEEK FROM now())- EXTRACT(WEEK FROM '".$thoigianBD."')+1 as sttTuan, EXTRACT(WEEK FROM now())+1 AS tuanht FROM `hockynamhoc` ORDER BY `sttTuan` DESC";
 
 
     $r = mysqli_query($con,$sql);

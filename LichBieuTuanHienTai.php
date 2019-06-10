@@ -1,11 +1,11 @@
+
 <?php
 
 if($_SERVER['REQUEST_METHOD']=='GET') {
 
     $idCB = $_GET['idCB'];
     $sttTuan = $_GET['sttTuan'];
-    $hocky = $_GET['hocky'];
-    $namhoc = $_GET['namhoc'];
+    $idHK = $_GET['idHK'];
 
     include("connect.php");
 
@@ -15,7 +15,7 @@ left outer join canbo cb on tkb.idCB=cb.idCB
 left outer join lophp on tkb.idlopHP=lophp.idlopHP 
 left outer join phonghoc ph on tkb.idPhong= ph.idPhong 
 left outer join hockynamhoc on hockynamhoc.idHK= lophp.idHK 
-where cb.idCB='" . $idCB . "'  AND tkb.sttTuan='" . $sttTuan . "'  AND hockynamhoc.hocky='" . $hocky . "'  AND hockynamhoc.namhoc='" . $namhoc . "'ORDER BY `tkb`.`thu` ASC ";
+where cb.idCB='" . $idCB . "'  AND tkb.sttTuan='" . $sttTuan . "'  AND hockynamhoc.idHK='" . $idHK . "'ORDER BY `tkb`.`thu` ASC";
     $r = mysqli_query($con, $sql);
 
     $tkb = array();

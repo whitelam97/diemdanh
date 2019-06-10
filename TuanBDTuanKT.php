@@ -31,8 +31,6 @@ class  TuanBDTuanKT{
         $this->tuanBD = $tuanBD;
         $this->tuanKT = $tuanKT;
     }
-
-
 }
 
 ?>

@@ -1,0 +1,38 @@
+<?php
+
+    include("connect.php");
+
+    $sql ="SELECT hocky,namhoc FROM `hockynamhoc`  
+ORDER BY `hockynamhoc`.`namhoc`  DESC";
+    $r = mysqli_query($con, $sql);
+
+    $tkb = array();
+    while ($row = mysqli_fetch_assoc($r)){
+        array_push($tkb, new HocKy(
+            $row['hocky'],
+            $row['namhoc']
+        ));
+    }
+    echo json_encode($tkb,JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+
+    mysqli_close($con);
+
+class  HocKy{
+    var $hocky;
+    var $namhoc;
+
+    /**
+     * HocKy constructor.
+     * @param $hocky
+     * @param $namhoc
+     */
+    public function HocKY($hocky, $namhoc)
+    {
+        $this->hocky = $hocky;
+        $this->namhoc = $namhoc;
+    }
+
+
+}
+
+?>

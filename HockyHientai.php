@@ -9,7 +9,6 @@ $res = mysqli_fetch_array($r);
 $result = array();
 
 if(sizeof($res)>0){
-
     array_push($result,array(
             "idHK"=>$res['idHK'],
             "msHK"=>$res['msHK'],
@@ -21,7 +20,6 @@ if(sizeof($res)>0){
     );
 
     echo json_encode(array("hocky"=>$result));
-
 
 }else {
 

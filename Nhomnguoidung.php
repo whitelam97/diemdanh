@@ -1,7 +1,7 @@
 <?php
 include ("connect.php");
 
-$sql = "SELECT nhomnguoidung FROM `quyentruycap`";
+$sql = "SELECT * FROM `quyentruycap` ORDER BY `quyentruycap`.`idQuyen` DESC";
 
 $r = mysqli_query($con,$sql);
 $res = mysqli_fetch_array($r);
@@ -21,7 +21,7 @@ if(sizeof($res)>0) {
  )
  );
 
- echo json_encode(array("result"=>$result));
+    echo json_encode($result, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
  }
 
  mysqli_close($con);

@@ -2,8 +2,7 @@
 
     include("connect.php");
 
-    $sql ="SELECT hocky,namhoc FROM `hockynamhoc`  
-ORDER BY `hockynamhoc`.`namhoc`  DESC";
+    $sql ="SELECT * FROM `hockynamhoc` ORDER BY `hockynamhoc`.`idHK` DESC";
     $r = mysqli_query($con, $sql);
 
     $tkb = array();
@@ -21,11 +20,6 @@ class  HocKy{
     var $hocky;
     var $namhoc;
 
-    /**
-     * HocKy constructor.
-     * @param $hocky
-     * @param $namhoc
-     */
     public function HocKY($hocky, $namhoc)
     {
         $this->hocky = $hocky;

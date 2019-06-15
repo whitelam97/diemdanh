@@ -12,7 +12,6 @@ if($_SERVER['REQUEST_METHOD']=='GET') {
  WHERE c.idlopHP='" . $idlopHP . "' AND c.idlopHP=b.idlopHP AND b.idSV=a.idSV AND a.idLopCN=d.idLopCN ORDER BY mssv";
 
     $r = mysqli_query($con, $sql);
-
     $tkb = array();
     if(mysqli_num_rows($r) > 0) {
         while ($row = mysqli_fetch_assoc($r)) {

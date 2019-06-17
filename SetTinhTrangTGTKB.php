@@ -1,6 +1,5 @@
 <?php
 include("connect.php");
-
 $tinhtrang=$_POST['tinhtrang'];
 $thoigiandiemdanh=$_POST['thoigiandiemdanh'];
 $idTKB=$_POST['idTKB'];

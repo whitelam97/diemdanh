@@ -1,10 +1,9 @@
 <?php
 include("connect.php");
-
-$idSV=$_POST['idSV'];
+$tinhtrang=$_POST['tinhtrang'];
 $idTKB=$_POST['idTKB'];
 
-$query="DELETE FROM `hoc` WHERE `hoc`.`idSV` ='$idSV' AND `hoc`.`idTKB` = '$idTKB'";
+$query="UPDATE `thoikhoabieu` SET `tinhtrang` = '$tinhtrang' WHERE `thoikhoabieu`.`idTKB` = '$idTKB'";
 if (mysqli_query($con,$query)){
     echo "success";
 }else{

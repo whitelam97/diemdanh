@@ -7,14 +7,19 @@ if($_SERVER['REQUEST_METHOD']=='GET') {
 
     include("connect.php");
 
-    $sql = "select *,(SELECT catiet.thoigianBD FROM catiet WHERE catiet.id=tkb.tietBD) tgbd,
-(SELECT catiet.thoigianKT FROM catiet WHERE catiet.id=tkb.tietBD+tkb.sotiet-1) tgkt from thoikhoabieu tkb 
+    $sql = "select *,(SELECT IF(lophp.loailopHP!=\"TH\",(SELECT  catiet.thoigianBD FROM catiet WHERE catiet.id=tkb.tietBD ),
+(SELECT  catiet.thoigianBD FROM catiet WHERE catiet.stt=((tkb.tietBD+1)DIV 3+1) AND catiet.loai=\"1\" ))) tgbd,
+(SELECT IF(lophp.loailopHP!=\"TH\",(SELECT catiet.thoigianKT FROM catiet WHERE catiet.id=tkb.tietBD+tkb.sotiet-1),
+(SELECT  catiet.thoigianKT FROM catiet WHERE catiet.stt=(((tkb.tietBD+1)DIV 3+1)+tkb.sotiet DIV 3 -1) AND catiet.loai=\"1\" ))) tgkt ,
+DATE_FORMAT(now(),\"%T\") AS timenow
+from thoikhoabieu tkb 
 left outer join canbo cb on tkb.idCB=cb.idCB 
 LEFT OUTER JOIN catiet on tkb.tietBD=catiet.id 
 left outer join lophp on tkb.idlopHP=lophp.idlopHP 
 left outer join phonghoc ph on tkb.idPhong= ph.idPhong 
 left outer join hockynamhoc on hockynamhoc.idHK= lophp.idHK 
 left outer join donvi on donvi.idDvi= cb.idDvi 
+
 where  tkb.sttTuan='" . $sttTuan . "' AND tkb.thu=WEEKDAY(now())+2 AND hockynamhoc.idHK='" . $idHK . "'ORDER BY `tkb`.`tietBD` ASC";
 
 
@@ -55,7 +60,8 @@ where  tkb.sttTuan='" . $sttTuan . "' AND tkb.thu=WEEKDAY(now())+2 AND hockynamh
             $row['thoigianKT'],
             $row['tgbd'],
             $row['tgkt'],
-            $row['tenDvi']
+            $row['tenDvi'],
+            $row['timenow']
         ));
     }
     echo json_encode($tkb,JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
@@ -96,8 +102,9 @@ class  tkbcb{
     var $tgbd;
     var $tgkt;
     var $tenDvi;
+    var $timenow;
 
-    function tkbcb($idTKB, $sttTuan, $thu, $tietBD, $sotiet, $daybu, $idlopHP, $idPhong, $tinhtrang, $idCB, $thoigiandiemdanh, $msCB, $hotenCB, $idHP, $mslopHP, $tenlopHP, $loailopHP, $soSV, $tuanhoc, $msPhong, $tenPhong, $nhahoc, $sttTang, $loaiPhong, $idHK, $msHK, $hocky, $namhoc, $thoigianBD, $thoigianKT, $tgbd, $tgkt,$tenDvi)
+    function tkbcb($idTKB, $sttTuan, $thu, $tietBD, $sotiet, $daybu, $idlopHP, $idPhong, $tinhtrang, $idCB, $thoigiandiemdanh, $msCB, $hotenCB, $idHP, $mslopHP, $tenlopHP, $loailopHP, $soSV, $tuanhoc, $msPhong, $tenPhong, $nhahoc, $sttTang, $loaiPhong, $idHK, $msHK, $hocky, $namhoc, $thoigianBD, $thoigianKT, $tgbd, $tgkt,$tenDvi,$timenow)
     {
         $this->idTKB = $idTKB;
         $this->sttTuan = $sttTuan;
@@ -132,6 +139,7 @@ class  tkbcb{
         $this->tgbd = $tgbd;
         $this->tgkt = $tgkt;
         $this->tenDvi=$tenDvi;
+        $this->timenow=$timenow;
     }
 
 }

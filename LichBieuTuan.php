@@ -17,7 +17,6 @@ left outer join phonghoc ph on tkb.idPhong= ph.idPhong
 left outer join hockynamhoc on hockynamhoc.idHK= lophp.idHK 
 where cb.idCB='" . $idCB . "'  AND tkb.sttTuan='" . $sttTuan . "'  AND hockynamhoc.hocky='" . $hocky . "'  AND hockynamhoc.namhoc='" . $namhoc . "'ORDER BY `tkb`.`thu` ASC ";
     $r = mysqli_query($con, $sql);
-
     $tkb = array();
     while ($row = mysqli_fetch_assoc($r)){
         array_push($tkb, new LichBieuTuan(

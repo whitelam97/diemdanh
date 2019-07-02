@@ -8,8 +8,8 @@ if($_SERVER['REQUEST_METHOD']=='GET') {
 
     $sql ="SELECT lophp.idlopHP,thoikhoabieu.idTKB,DATE_FORMAT(ADDDATE(hockynamhoc.thoigianBD,7*(thoikhoabieu.sttTuan-1)+thoikhoabieu.thu -2),'%d/%m/%Y') AS ngayhoc
  FROM `lophp`, thoikhoabieu,hockynamhoc WHERE lophp.tenlopHP='".$tenlophp."' AND thoikhoabieu.idlopHP=lophp.idlopHP AND hockynamhoc.idHK=lophp.idHK
- AND DATE_FORMAT(ADDDATE(hockynamhoc.thoigianBD,7*(thoikhoabieu.sttTuan-1)+thoikhoabieu.thu -2),'%d/%m/%Y') <= DATE_FORMAT(now(),'%d/%m/%Y')";
-
+";
+//    AND DATE_FORMAT(ADDDATE(hockynamhoc.thoigianBD,7*(thoikhoabieu.sttTuan-1)+thoikhoabieu.thu -2),'%d/%m/%Y') <= DATE_FORMAT(now(),'%d/%m/%Y')
     $r = mysqli_query($con, $sql);
 
     $tkb = array();

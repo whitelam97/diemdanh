@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD']=='GET') {
 
     include("connect.php");
 
-    $sql ="SELECT EXTRACT(WEEK FROM thoigianBD) AS tuanBD,EXTRACT(WEEK FROM thoigianKT) AS tuanKT FROM `hockynamhoc` WHERE hocky='" . $hk . "' AND namhoc='" . $nh . "'";
+    $sql ="SELECT EXTRACT(WEEK FROM thoigianBD) AS tuanBD,EXTRACT(WEEK FROM thoigianKT)+1 AS tuanKT FROM `hockynamhoc` WHERE hocky='" . $hk . "' AND namhoc='" . $nh . "'";
 
     $r = mysqli_query($con, $sql);
 

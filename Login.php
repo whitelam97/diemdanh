@@ -7,21 +7,22 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
     $nhomnguoidung  = $_GET['nhomnguoidung'];
 
     include ("connect.php");
-
+//
 //    $sql="SELECT * FROM canbo
 //LEFT OUTER JOIN duoccap on canbo.idCB=duoccap.idCB
 //LEFT OUTER JOIN donvi on canbo.idDvi=donvi.idDvi
 //LEFT OUTER JOIN quyentruycap on duoccap.idQuyen=quyentruycap.idQuyen
 //WHERE msCB='".$msCB."' AND matkhau=MD5('$matkhau')
 //AND quyentruycap.nhomnguoidung='".$nhomnguoidung."'";
-//
 
-    $sql="SELECT * FROM canbo 
-LEFT OUTER JOIN duoccap on canbo.idCB=duoccap.idCB 
-LEFT OUTER JOIN donvi on canbo.idDvi=donvi.idDvi 
-LEFT OUTER JOIN quyentruycap on duoccap.idQuyen=quyentruycap.idQuyen 
+
+    $sql="SELECT * FROM canbo
+LEFT OUTER JOIN duoccap on canbo.idCB=duoccap.idCB
+LEFT OUTER JOIN donvi on canbo.idDvi=donvi.idDvi
+LEFT OUTER JOIN quyentruycap on duoccap.idQuyen=quyentruycap.idQuyen
 WHERE msCB='".$msCB."' AND matkhau='".$matkhau."'
 AND quyentruycap.nhomnguoidung='".$nhomnguoidung."'";
+
     $r = mysqli_query($con,$sql);
     $res = mysqli_fetch_array($r);
     $result = array();

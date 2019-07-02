@@ -19,7 +19,6 @@ left outer join lophp on tkb.idlopHP=lophp.idlopHP
 left outer join phonghoc ph on tkb.idPhong= ph.idPhong 
 left outer join hockynamhoc on hockynamhoc.idHK= lophp.idHK 
 left outer join donvi on donvi.idDvi= cb.idDvi 
-
 where  tkb.sttTuan='" . $sttTuan . "' AND tkb.thu=WEEKDAY(now())+2 AND hockynamhoc.idHK='" . $idHK . "'ORDER BY `tkb`.`tietBD` ASC";
 
 

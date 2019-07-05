@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD']=='GET') {
 
     $sql = "SELECT a.idSV, mssv, hotenSV, msLopCN,
  (SELECT SUM(sotiet) AS tongbuoi FROM thoikhoabieu e, hoc f, lophp c WHERE idSV=a.idSV AND c.idlopHP='" . $idlopHP . "' AND e.idTKB=f.idTKB AND e.idLopHP =c.idLopHP)AS cohoc, 
- (SELECT SUM(sotiet) FROM thoikhoabieu e, lophp c WHERE e.idlopHP='" . $idlopHP . "' AND e.idLopHP =c.idLopHP )AS tongbuoi FROM sinhvien a, thuoc b, lopHP c, lopchuyennganh d 
+ (SELECT SUM(sotiet) FROM thoikhoabieu e, lophp c WHERE e.idlopHP='" . $idlopHP . "' AND e.idLopHP =c.idLopHP )AS tongbuoi FROM sinhvien a, thuoc b, lophp c, lopchuyennganh d 
  WHERE c.idlopHP='" . $idlopHP . "' AND c.idlopHP=b.idlopHP AND b.idSV=a.idSV AND a.idLopCN=d.idLopCN ORDER BY mssv";
 
     $r = mysqli_query($con, $sql);

@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD']=='GET') {
     include("connect.php");
 
     $sql ="select lophp.tenlopHP,ph.tenPhong,tkb.thu,tkb.tietBD,tkb.sotiet,
-EXTRACT(Week FROM hockynamhoc.thoigianBD)+'" . $sttTuan . "'+1  AS ht from thoikhoabieu tkb 
+EXTRACT(Week FROM hockynamhoc.thoigianBD)+'" . $sttTuan . "'  AS ht from thoikhoabieu tkb 
 left outer join canbo cb on tkb.idCB=cb.idCB 
 left outer join lophp on tkb.idlopHP=lophp.idlopHP 
 left outer join phonghoc ph on tkb.idPhong= ph.idPhong 

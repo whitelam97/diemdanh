@@ -38,7 +38,6 @@ WHERE canbo.idCB='".$idCB."' AND hockynamhoc.hocky='".$hocky."' AND hockynamhoc.
         ));
     }
     echo json_encode($tkb,JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-
     mysqli_close($con);
 }
 class  LopHocPhanGiangDay{

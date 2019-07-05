@@ -10,7 +10,8 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
 
     $sql="SELECT DATE_FORMAT(ADDDATE(thoigianBD,7*('$sttTuan'-1)),'%d/%m/%Y') AS monday,
 DATE_FORMAT( ADDDATE(thoigianBD,7*('$sttTuan'-1)+6),'%d/%m/%Y') AS sunday ,
-DATE_FORMAT( now(),'%d/%m/%Y') as ngayht FROM hockynamhoc WHERE idHK='".$idHK."'";
+DATE_FORMAT( now(),'%d/%m/%Y') as ngayht 
+FROM hockynamhoc WHERE idHK='".$idHK."'";
 
     $r = mysqli_query($con,$sql);
 

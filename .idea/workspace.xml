@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9840a267-0a1e-49d9-8000-8e7e77fd781f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DoiMatKhau.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuenMatKhau.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DanhSachSVThuocLopHP.php" beforeDir="false" afterPath="$PROJECT_DIR$/DanhSachSVThuocLopHP.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LichBieuTuanTheoTenCB.php" beforeDir="false" afterPath="$PROJECT_DIR$/LichBieuTuanTheoTenCB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LopHocPhanGiangDay.php" beforeDir="false" afterPath="$PROJECT_DIR$/LopHocPhanGiangDay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HocKy.php" beforeDir="false" afterPath="$PROJECT_DIR$/HocKy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LopHocTrongNgayTT.php" beforeDir="false" afterPath="$PROJECT_DIR$/LopHocTrongNgayTT.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LopHocTrongNgayTTTheoTinhTRang.php" beforeDir="false" afterPath="$PROJECT_DIR$/LopHocTrongNgayTTTheoTinhTRang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LophocTrongNgayCB.php" beforeDir="false" afterPath="$PROJECT_DIR$/LophocTrongNgayCB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MonToSunofNow.php" beforeDir="false" afterPath="$PROJECT_DIR$/MonToSunofNow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhomnguoidung.php" beforeDir="false" afterPath="$PROJECT_DIR$/Nhomnguoidung.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TuanBDTuanKT.php" beforeDir="false" afterPath="$PROJECT_DIR$/TuanBDTuanKT.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TuanHientai.php" beforeDir="false" afterPath="$PROJECT_DIR$/TuanHientai.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/connect.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,19 +27,82 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nhomnguoidung.php">
+        <entry file="file://$PROJECT_DIR$/checkmokhoa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+            <state relative-caret-position="272">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HocKy.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LichBieuTuanTheoTenCB.php">
+        <entry file="file://$PROJECT_DIR$/MonToSunofNow.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="11" column="75" lean-forward="true" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+            <state relative-caret-position="80">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DonVi.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TuanHientai.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LopHocTrongNgayTT.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QuenMatKhau.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -59,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/connect.php" />
         <option value="$PROJECT_DIR$/HockyHientai.php" />
         <option value="$PROJECT_DIR$/LichBieuTuanHienTai.php" />
         <option value="$PROJECT_DIR$/DiemDanh.php" />
@@ -68,32 +132,35 @@
         <option value="$PROJECT_DIR$/DonVi.php" />
         <option value="$PROJECT_DIR$/TenCBTheoDVi.php" />
         <option value="$PROJECT_DIR$/themspoder.php" />
-        <option value="$PROJECT_DIR$/HocKy.php" />
         <option value="$PROJECT_DIR$/XoaDiemDanhSV.php" />
         <option value="$PROJECT_DIR$/LichBieuTuan.php" />
         <option value="$PROJECT_DIR$/updateKhoa.php" />
         <option value="$PROJECT_DIR$/UpdateTinhTrang.php" />
         <option value="$PROJECT_DIR$/checkKhoa.php" />
         <option value="$PROJECT_DIR$/checkmokhoa.php" />
-        <option value="$PROJECT_DIR$/LophocTrongNgayCB.php" />
-        <option value="$PROJECT_DIR$/LopHocTrongNgayTTTheoTinhTRang.php" />
         <option value="$PROJECT_DIR$/SetTinhTrangTGTKB.php" />
-        <option value="$PROJECT_DIR$/LopHocTrongNgayTT.php" />
         <option value="$PROJECT_DIR$/NgayHocTheoLopHP.php" />
         <option value="$PROJECT_DIR$/Login.php" />
         <option value="$PROJECT_DIR$/DanhSachSVThuocLopHP.php" />
-        <option value="$PROJECT_DIR$/MonToSunofNow.php" />
-        <option value="$PROJECT_DIR$/TuanHientai.php" />
         <option value="$PROJECT_DIR$/TuanBDTuanKT.php" />
         <option value="$PROJECT_DIR$/Nhomnguoidung.php" />
         <option value="$PROJECT_DIR$/LopHocPhanGiangDay.php" />
         <option value="$PROJECT_DIR$/LichBieuTuanTheoTenCB.php" />
+        <option value="$PROJECT_DIR$/connect.php" />
+        <option value="$PROJECT_DIR$/LophocTrongNgayCB.php" />
+        <option value="$PROJECT_DIR$/LopHocTrongNgayTTTheoTinhTRang.php" />
+        <option value="$PROJECT_DIR$/DoiMatKhau.php" />
+        <option value="$PROJECT_DIR$/TuanHientai.php" />
+        <option value="$PROJECT_DIR$/QuenMatKhau.php" />
+        <option value="$PROJECT_DIR$/LopHocTrongNgayTT.php" />
+        <option value="$PROJECT_DIR$/HocKy.php" />
+        <option value="$PROJECT_DIR$/MonToSunofNow.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1026" />
+    <option name="x" value="1025" />
     <option name="width" value="865" />
     <option name="height" value="980" />
   </component>
@@ -189,7 +256,20 @@
       <workItem from="1562148173330" duration="172000" />
       <workItem from="1562149407932" duration="1199000" />
       <workItem from="1562156486526" duration="5199000" />
-      <workItem from="1562297622467" duration="7188000" />
+      <workItem from="1562297622467" duration="7323000" />
+      <workItem from="1562315575117" duration="1282000" />
+      <workItem from="1562327398644" duration="1363000" />
+      <workItem from="1562346161925" duration="726000" />
+      <workItem from="1562347158136" duration="143000" />
+      <workItem from="1562347621302" duration="181000" />
+      <workItem from="1562398972173" duration="243000" />
+      <workItem from="1562401177604" duration="2250000" />
+      <workItem from="1562425519307" duration="4864000" />
+      <workItem from="1562561440215" duration="704000" />
+      <workItem from="1562574463136" duration="1340000" />
+      <workItem from="1562687532256" duration="38000" />
+      <workItem from="1562689219544" duration="96000" />
+      <workItem from="1562749447606" duration="263000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1560101615934</created>
@@ -268,18 +348,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561541770164</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="5/7  da fix tren host">
+      <created>1562315161093</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1562315161093</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101181000" />
+    <option name="totallyTimeSpent" value="114809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15302013" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18053691" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -314,16 +401,10 @@
     <MESSAGE value="17/6" />
     <MESSAGE value="18/6" />
     <MESSAGE value="22/6" />
-    <option name="LAST_COMMIT_MESSAGE" value="22/6" />
+    <MESSAGE value="5/7  da fix tren host" />
+    <option name="LAST_COMMIT_MESSAGE" value="5/7  da fix tren host" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themspoder.php" />
     <entry file="file://$PROJECT_DIR$/XoaDiemDanhSV.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -332,32 +413,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LichBieuTuanHienTai.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/updateKhoa.php" />
-    <entry file="file://$PROJECT_DIR$/checkKhoa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LichBieuTuan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkmokhoa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -375,31 +435,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LopHocTrongNgayTTTheoTinhTRang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="141" column="32" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UpdateTinhTrang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NgayHocTheoLopHP.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DanhSachSVThuocLopHP.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -410,52 +449,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DonVi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LophocTrongNgayCB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="3" selection-start-line="143" selection-start-column="3" selection-end-line="143" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SinhVienDaDiemdanh.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HockyHientai.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MonToSunofNow.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TuanHientai.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -466,31 +463,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LopHocTrongNgayTT.php">
+    <entry file="file://$PROJECT_DIR$/Nhomnguoidung.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="110" selection-start-line="10" selection-start-column="110" selection-end-line="10" selection-end-column="110" />
+        <state relative-caret-position="289">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TenLopHPTheoHK.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="204">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="14" selection-end-column="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HocKy.php">
+    <entry file="file://$PROJECT_DIR$/LichBieuTuanTheoTenCB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        <state relative-caret-position="595">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nhomnguoidung.php">
+    <entry file="file://$PROJECT_DIR$/LichBieuTuanHienTai.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="595">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DanhSachSVThuocLopHP.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SinhVienDaDiemdanh.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LopHocTrongNgayTTTheoTinhTRang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UpdateTinhTrang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DoiMatKhau.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LophocTrongNgayCB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkKhoa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkmokhoa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DonVi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TuanHientai.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LopHocTrongNgayTT.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuenMatKhau.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -501,10 +596,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LichBieuTuanTheoTenCB.php">
+    <entry file="file://$PROJECT_DIR$/HocKy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="75" lean-forward="true" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MonToSunofNow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

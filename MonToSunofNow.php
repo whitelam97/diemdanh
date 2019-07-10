@@ -9,8 +9,7 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
     include ("connect.php");
 
     $sql="SELECT DATE_FORMAT(ADDDATE(thoigianBD,7*('$sttTuan'-1)),'%d/%m/%Y') AS monday,
-DATE_FORMAT( ADDDATE(thoigianBD,7*('$sttTuan'-1)+6),'%d/%m/%Y') AS sunday ,
-DATE_FORMAT( now(),'%d/%m/%Y') as ngayht 
+DATE_FORMAT( ADDDATE(thoigianBD,7*('$sttTuan'-1)+6),'%d/%m/%Y') AS sunday 
 FROM hockynamhoc WHERE idHK='".$idHK."'";
 
     $r = mysqli_query($con,$sql);
@@ -24,8 +23,7 @@ FROM hockynamhoc WHERE idHK='".$idHK."'";
         array_push($result,array(
                 "monday"=>$res['monday'],
                 "sunday"=>$res['sunday'],
-                "ngayht"=>$res['ngayht'],
-
+                "ngayht"=>date('d/m/Y',strtotime("now"))
             )
         );
 

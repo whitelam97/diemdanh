@@ -11,8 +11,7 @@ if($_SERVER['REQUEST_METHOD']=='GET') {
     $sql = "select *,(SELECT IF(lophp.loailopHP!=\"TH\",(SELECT  catiet.thoigianBD FROM catiet WHERE catiet.id=tkb.tietBD ),
 (SELECT  catiet.thoigianBD FROM catiet WHERE catiet.stt=((tkb.tietBD+1)DIV 3+1) AND catiet.loai=\"1\" ))) tgbd,
 (SELECT IF(lophp.loailopHP!=\"TH\",(SELECT catiet.thoigianKT FROM catiet WHERE catiet.id=tkb.tietBD+tkb.sotiet-1),
-(SELECT  catiet.thoigianKT FROM catiet WHERE catiet.stt=(((tkb.tietBD+1)DIV 3+1)+tkb.sotiet DIV 3 -1) AND catiet.loai=\"1\" ))) tgkt ,
-DATE_FORMAT(now(),\"%T\") AS timenow
+(SELECT  catiet.thoigianKT FROM catiet WHERE catiet.stt=(((tkb.tietBD+1)DIV 3+1)+tkb.sotiet DIV 3 -1) AND catiet.loai=\"1\" ))) tgkt 
 from thoikhoabieu tkb 
 left outer join canbo cb on tkb.idCB=cb.idCB 
 LEFT OUTER JOIN catiet on tkb.tietBD=catiet.id 
@@ -20,7 +19,8 @@ left outer join lophp on tkb.idlopHP=lophp.idlopHP
 left outer join phonghoc ph on tkb.idPhong= ph.idPhong 
 left outer join hockynamhoc on hockynamhoc.idHK= lophp.idHK 
 left outer join donvi on donvi.idDvi= cb.idDvi 
-where  tkb.sttTuan='" . $sttTuan . "' AND tkb.thu=WEEKDAY(now())+2 AND hockynamhoc.idHK='" . $idHK . "' AND tkb.tinhtrang='".$tinhtrang."' ORDER BY `tkb`.`tietBD` ASC";
+where  tkb.sttTuan='" . $sttTuan . "' AND tkb.thu=WEEKDAY(now())+2 AND hockynamhoc.idHK='" . $idHK . "' AND tkb.tinhtrang='".$tinhtrang."' 
+ORDER BY `tkb`.`tietBD` ASC";
 
 
     $r = mysqli_query($con, $sql);
@@ -61,7 +61,7 @@ where  tkb.sttTuan='" . $sttTuan . "' AND tkb.thu=WEEKDAY(now())+2 AND hockynamh
             $row['tgbd'],
             $row['tgkt'],
             $row['tenDvi'],
-            $row['timenow']
+            date( 'H:i:s',  strtotime("now"))
         ));
     }
     echo json_encode($tkb,JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);

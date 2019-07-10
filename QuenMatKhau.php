@@ -2,25 +2,25 @@
 
 if($_SERVER['REQUEST_METHOD']=='GET'){
 
-    $thoigianBD  = $_GET['thoigianBD'];
+    $email = $_GET['email'];
 
     include ("connect.php");
 
-    $sql="SELECT EXTRACT(WEEK FROM now())- EXTRACT(WEEK FROM '".$thoigianBD."')+1 as sttTuan, EXTRACT(WEEK FROM now())+1 AS tuanht FROM `hockynamhoc` ORDER BY `sttTuan` DESC";
+    $sql="SELECT * FROM `canbo` WHERE email='".$email."'";
     $r = mysqli_query($con,$sql);
     $res = mysqli_fetch_array($r);
     $result = array();
     if(sizeof($res)>0){
         array_push($result,array(
-                "sttTuan"=>$res['sttTuan'],
-                "tuanht"=>$res['tuanht']
+                "idCB"=>$res['idCB'],
+                "msCB"=>$res['msCB']
             )
         );
-
         echo json_encode(array("tuanht"=>$result));
     }else {
         array_push($result,array(
-                "tuanht"=>'error',
+                "idCB"=>'Null',
+                "msCB"=>'Null',
             )
         );
         echo json_encode(array("tuanht"=>$result));
